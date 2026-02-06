@@ -247,7 +247,7 @@ export class NzAnchorComponent implements AfterViewInit, OnChanges {
 
   handleScrollTo(linkComp: NzAnchorLinkComponent): void {
     const id = linkComp.nzHref.replace(/^#/, '');
-    const el = this.doc.getElementById(id)!;
+    const el = this.doc.getElementById(id);
     if (!el) {
       return;
     }
